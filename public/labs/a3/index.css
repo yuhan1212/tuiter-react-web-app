@@ -191,3 +191,320 @@ p#id-selector-2 {
     width: 20%;
     float: left;
 }
+
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.counter-clockwise-rotate-list {
+    transform: rotate(-12deg);
+    width: 200px;
+    background-color: pink;
+    color: darkgreen;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-moomin {
+    transform: rotate(-30deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+.gradients-positioned {
+    background:
+            radial-gradient(
+                    at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.my-gradients-linear {
+    background: linear-gradient(orange, yellowgreen);
+    width: 200px;
+    height: 200px;
+}
+.my-gradients-radial {
+    background: radial-gradient(lightblue, darkblue);
+    width: 200px;
+    height: 200px;
+}
+.my-gradients-positioned {
+    background:
+            radial-gradient(
+                    at center left, lightcoral, cornsilk);
+    width: 200px;
+    height: 200px;
+    color: blueviolet;
+}
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.my-animation-keyframes {
+    position: relative;
+    top: 20px;
+    animation-duration: 10s;
+    animation-name: me;
+    width: 80px;
+    height: 30px;
+    background-color: beige;
+    color: cornflowerblue;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes me {
+    from {
+        position: relative;
+        top: 20px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 50px;
+        background-color: maroon;
+        color: cornflowerblue;
+    }
+
+    50% {
+        position: relative;
+        top: 80px;
+        font-size: 200%;
+        width: 400px;
+        height: 100px;
+        background-color: black;
+        color: cornsilk;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 170px;
+        height: 60px;
+        background-color: maroon;
+        color: cornflowerblue;
+    }
+}
+
+.flex-container-flex {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex
+}
+.flex-container-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center
+}
+.flex-container-end {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: end
+}
+.flex-container-space-around {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
+.flex-container-space-between {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container-vertical-start {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.flex-container-vertical-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-container-vertical-full {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+}
+
+.flex-container-vertical-full > .flex-box {
+    flex-basis: 100%;
+}
+
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: beige;
+    }
+    head {
+        color: #ff7070;
+    }
+    .media-query {
+        background-color: gray;
+        color: hotpink;
+    }
+}
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    body {
+        background-color: cadetblue;
+        color: green;
+    }
+    p {
+        color: maroon;
+    }
+    .media-query {
+        background-color: darkgoldenrod;
+        color: white;
+    }
+}
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    body {
+        background-color: wheat;
+        color: black;
+    }
+    div {
+        color: deeppink;
+    }
+    .media-query {
+        background-color: blueviolet;
+        color: beige;
+    }
+}
+
+
+
