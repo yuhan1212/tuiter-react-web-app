@@ -159,6 +159,8 @@ body{
     display: flex;
     justify-content: right;
     align-items: center;
+    text-decoration: none;
+    color:rgb(47, 51, 54);
 }
 
 .wd-pink {
