@@ -1,0 +1,166 @@
+body{
+    background-color: black;
+    font-family: helvetica,  arial, serif;
+}
+
+.wd-top-board {
+    color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1px;
+    padding: 12px 12px 16px 16px;
+    margin: 12px 12px 0 16px;
+}
+
+.wd-top-row {
+    display: table;
+    width: 100%;
+    height: 42px;
+}
+
+.wd-col-80 {
+    width: 80%;
+    float: left;
+}
+
+.wd-col-20 {
+    width: 20%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.wd-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-owner {
+    color: lightgray;
+    font-size: 13px;
+}
+
+.wd-dots-icon {
+    width: 13px;
+    height: 13px;
+}
+
+.wd-content-board {
+    color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1px;
+    padding: 12px 12px 16px 16px;
+    margin: 0 12px 0 16px;
+}
+
+.wd-content-row {
+    display: table;
+    width: 100%;
+    height: fit-content;
+}
+
+.wd-col-60px {
+    width: 60px;
+    height: 100%;
+    float: left;
+}
+
+.wd-col-rest {
+    max-width: 506px;
+    height: 100%;
+    float: left;
+}
+
+.wd-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+}
+
+.wd-author {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-post-details {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-main-content {
+    font-size: 15px;
+    color: white;
+    max-width: 506px;
+    border: black;
+    margin-bottom: 12px;
+    margin-right: 16px;
+}
+
+.wd-dots-icon-in-main-content {
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-bottom: 12px;
+}
+
+.wd-bord-pic {
+    position: relative;
+    top: 12px;
+    color: rgb(47, 51, 54);
+    width: 504px;
+    border-style: solid;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.wd-pic-in-main-content {
+    position: relative;
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-content-pic-title {
+    padding: 12px 12px 2px 12px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-content-pic-content {
+    font-size: 15px;
+    color: lightgray;
+    padding: 0 12px 12px 12px;
+}
+
+.wd-line-gap {
+    margin-bottom: 5px;
+}
+
+.wd-icon {
+    margin-right: 12px;
+    width: 30px;
+    height: 30px;
+}
+
+.wd-display-center {
+    border: black solid 1px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wd-display-horizontal-center {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.wd-pink {
+    color: #df255e;
+}
