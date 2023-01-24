@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+    margin-left: 16px;
+    border: rgb(47, 51, 54);
+}
+
+.wd-row {
+    display: table;
+    width: 100%;
+    height: 25px;
+}
+
+.wd-col-80 {
+    width: 80%;
+    float: left;
+    height: 25px;
+}
+
+.wd-col-15 {
+    width: 15%;
+    float: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 25px;
+}
+
+.wd-search-section {
+    border-radius: 50px;
+    background-color: darkgray;
+    height: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 12px;
+}
+
+
+.wd-search-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.wd-search-bar-content {
+    background: darkgray;
+    outline: none;
+    border: darkgray;
+    color: white;
+    padding-left: 12px;
+}
+
+.wd-gear-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    display: flex;
+}
+
+.wd-white-word {
+    color: white;
+}
+
+.wd-gray-word {
+    color: rgb(47, 51, 54);
+}
+
+.wd-link-highlight {
+    font-family: Arial;
+    font-size: 15px;
+    padding: 16px;
+    color: rgb(29,161,242);
+    border: solid black;
+    border-bottom-color: rgb(29, 161, 242);
+    border-bottom-width: 3px;
+    text-decoration: none;
+}
+
+.wd-links {
+    font-family: Arial;
+    font-size: 15px;
+    padding: 16px;
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
