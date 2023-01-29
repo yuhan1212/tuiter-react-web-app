@@ -52,7 +52,7 @@ body{
 }
 
 .wd-search-bar-content {
-    width: 95%;
+    width: 80%;
     height: 35px;
     background: #eef3f4;
     outline: none;
@@ -169,8 +169,9 @@ body{
 }
 
 .list-group-item.active {
-    color: #1f9bf0;
-    background-color: white;;
+    font-weight: bold;
+    color: black;
+    background-color: white;
 }
 
 .btn {
