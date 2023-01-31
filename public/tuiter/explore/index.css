@@ -203,11 +203,18 @@ body{
     border-radius: 100px;
 }
 
-.wd-follow {
+.wd-horizontal-center {
     float: right;
     display: flex;
     justify-content: right;
     align-items: center;
+}
+
+.wd-follow {
+    background-color: #32231e;;
+    border-color: #32231e;
+    font-weight: bold;
+    color: white;
 }
 
 .wd-main-img-lines {
