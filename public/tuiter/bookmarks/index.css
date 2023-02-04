@@ -166,3 +166,9 @@ body{
 .wd-pink {
     color: #df255e;
 }
+
+.wd-back {
+    color: lightgray;
+    text-decoration: none;
+    margin-left: 16px;
+}
