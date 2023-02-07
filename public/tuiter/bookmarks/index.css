@@ -107,19 +107,18 @@ body{
 }
 
 .wd-bord-pic {
-    position: relative;
-    top: 12px;
+    /*position: relative;*/
+    /*top: 12px;*/
     color: rgb(47, 51, 54);
-    width: 504px;
-    border-style: solid;
+    /*width: 504px;*/
+    border: 1px solid;
     border-radius: 20px;
     margin-bottom: 12px;
 }
 
 .wd-pic-in-main-content {
     position: relative;
-    width: 504px;
-    height: 264px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -171,4 +170,8 @@ body{
     color: lightgray;
     text-decoration: none;
     margin-left: 16px;
+}
+
+.wd-dark-gray {
+    color: darkgray;
 }

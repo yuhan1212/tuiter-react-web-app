@@ -1,5 +1,5 @@
-const navigations = [{label: 'Home', href: '#', icon: 'fa fa-home'},
-                    {label: 'Explore', href: '#', icon: 'fa fa-hashtag'},
+const navigations = [{label: 'Home', href: '../HomeScreen/index.html', icon: 'fa fa-home'},
+                    {label: 'Explore', href: '../ExploreScreen/index.html', icon: 'fa fa-hashtag'},
                     {label: 'Notification', href: '#', icon: 'fa fa-bell'},
                     {label: 'Messages', href: '#', icon: 'fa fa-envelope'},
                     {label: 'Bookmarks', href: '../bookmarks/index.html', icon: 'fas fa-bookmark'},
@@ -9,7 +9,7 @@ const navigations = [{label: 'Home', href: '#', icon: 'fa fa-home'},
 
 
 
-const NavigationSidebar = (active_navigation='Explore') => {
+const NavigationSidebar = (activeNavigation) => {
     return(`
    <div class="list-group">
      <a class="list-group-item" href="/">
@@ -19,7 +19,7 @@ const NavigationSidebar = (active_navigation='Explore') => {
             
        ${
         navigations.map(navigation => {
-            return(`<a href=${navigation.href} class="list-group-item ${active_navigation===navigation.label ? 'active' : ''}">
+            return(`<a href=${navigation.href} class="list-group-item ${activeNavigation===navigation.label ? 'active' : ''}">
                     <i class="wd-icon-width ${navigation.icon}"></i>
                     <span class="m-2 d-none d-xl-inline">${navigation.label}</a>                   
                     `);}).join('')
