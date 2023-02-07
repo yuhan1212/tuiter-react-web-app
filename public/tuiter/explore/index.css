@@ -67,7 +67,8 @@ body{
     text-decoration: none;
     border: solid black;
     border-bottom: 3px solid rgb(29, 161, 242);
-    padding: 16px;
+    padding-bottom: 16px;
+    margin: 16px 16px 0 16px;
     position: relative;
 }
 
