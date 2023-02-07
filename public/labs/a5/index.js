@@ -77,7 +77,7 @@ function add (a, b) {
 const twoPlusFour = add(2, 4);
 console.log(twoPlusFour);
 
-console.log('New ES6 functions')
+console.log('New ES6 arrow functions')
 const subtract = (a, b) => {
     return a - b;
 }
