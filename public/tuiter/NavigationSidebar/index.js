@@ -3,7 +3,7 @@ const navigations = [{label: 'Home', href: '../HomeScreen/index.html', icon: 'fa
                     {label: 'Notification', href: '#', icon: 'fa fa-bell'},
                     {label: 'Messages', href: '#', icon: 'fa fa-envelope'},
                     {label: 'Bookmarks', href: '../bookmarks/index.html', icon: 'fas fa-bookmark'},
-                    {label: 'Lists', href: '#', icon: 'fa fa-bell'},
+                    {label: 'Lists', href: '#', icon: 'fa-solid fa-list'},
                     {label: 'Profile', href: '../profile.html', icon: 'fa fa-user'},
                     {label: 'More', href: '#', icon: 'fas fa-ellipsis-h'}];
 
