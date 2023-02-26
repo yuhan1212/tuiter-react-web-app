@@ -23,3 +23,25 @@
 .wd-bottom-4 {
     bottom: 4px;
 }
+
+.wd-search-section {
+    border-radius: 50px;
+    border: 1px solid #eef3f4;
+    background-color: #eef3f4;
+    height: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.wd-search-bar-content {
+    width: 80%;
+    height: 35px;
+    background: #eef3f4;
+    outline: none;
+    border: #eef3f4;
+    color: black;
+    padding-left: 15px;
+    font-size: 16px;
+}

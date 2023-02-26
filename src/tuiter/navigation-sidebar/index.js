@@ -9,33 +9,51 @@ const NavigationSidebar = () => {
 
     return (
         <div className="list-group">
-            <a className="list-group-item">Tuiter</a>
+            <a className="list-group-item bi bi-twitter icon-blue" style={{color: "#299fd6"}}></a>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
-                Home
+                <i className="wd-icon-width bi bi-house-door-fill"></i>
+                <span className="m-2 d-none d-xl-inline">
+                    Home</span>
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
-                Explore
+                <i className="wd-icon-width bi bi-hash"></i>
+                <span className="m-2 d-none d-xl-inline">
+                Explore</span>
             </Link>
             <Link to="/" className="list-group-item">
-                Labs
+                <i className="wd-icon-width bi bi-tags-fill"></i>
+                <span className="m-2 d-none d-xl-inline">
+                Labs</span>
             </Link>
             <a className={`list-group-item ${active === 'notifications'?'active':''}`}>
-                Notifications
+                <i className="wd-icon-width bi bi-bell-fill"></i>
+                <span className="m-2 d-none d-xl-inline">
+                Notifications</span>
             </a>
             <a className={`list-group-item ${active === 'messages'?'active':''}`}>
-                Messages
+                <i className="wd-icon-width bi bi-envelope-fill"></i>
+                <span className="m-2 d-none d-xl-inline">
+                Messages</span>
             </a>
             <a className={`list-group-item ${active === 'bookmarks'?'active':''}`}>
-                Bookmarks
+                <i className="wd-icon-width bi bi-bookmark-fill"></i>
+                <span className="m-2 d-none d-xl-inline">
+                Bookmarks</span>
             </a>
             <a className={`list-group-item ${active === 'lists'?'active':''}`}>
-                Lists
+                <i className="wd-icon-width bi bi-list-task"></i>
+                <span className="m-2 d-none d-xl-inline">
+                Lists</span>
             </a>
             <a className={`list-group-item ${active === 'profile'?'active':''}`}>
-                Profile
+                <i className="wd-icon-width bi bi-person-fill"></i>
+                <span className="m-2 d-none d-xl-inline">
+                Profile</span>
             </a>
             <a className={`list-group-item ${active === 'more'?'active':''}`}>
-                More
+                <i className="wd-icon-width bi bi-three-dots"></i>
+                <span className="m-2 d-none d-xl-inline">
+                More</span>
             </a>
         </div>
     );
