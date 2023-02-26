@@ -8,6 +8,7 @@ const NavigationSidebar = () => {
     const active = paths[2];
 
     return (
+        <>
         <div className="list-group">
             <a className="list-group-item bi bi-twitter icon-blue" style={{color: "#299fd6"}}></a>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
@@ -56,6 +57,12 @@ const NavigationSidebar = () => {
                 More</span>
             </a>
         </div>
+        <div className="d-grid mt-2">
+            <a href="tweet.html"
+               className="btn btn-primary btn-block rounded-pill">
+                Tuit</a>
+        </div>
+    </>
     );
 };
 export default NavigationSidebar;
