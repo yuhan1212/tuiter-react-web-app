@@ -11,6 +11,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import ProfileComponent from "./profile";
 import EditProfile from "./edit-profile";
+import PostSummaryList from "./post-summary-list";
 
 const store = configureStore(
     {reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}});
@@ -33,7 +34,12 @@ function Tuiter() {
                 </Routes>
             </div>
             <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                <WhoToFollowList/>
+                <Routes>
+                    <Route path="home" element={<PostSummaryList/>}/>
+                    <Route path="explore" element={<WhoToFollowList/>}/>
+                    <Route path="profile" element={<WhoToFollowList/>}/>
+                    <Route path="edit-profile" element={<WhoToFollowList/>}/>
+                </Routes>
             </div>
         </div>
 
