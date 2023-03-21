@@ -1,14 +1,24 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {likeTuit, deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
+
 
 const TuitItem = ({tuit}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     const likeTuitHandler = (tuit) => {
-        dispatch(likeTuit(tuit))
+        dispatch(updateTuitThunk({...tuit,
+            likes: tuit.liked? tuit.likes - 1 : tuit.likes + 1,
+            liked: !tuit.liked}
+    ))
+    }
+    const dislikeTuitHandler = (tuit) => {
+        dispatch(updateTuitThunk({...tuit,
+            dislikes: tuit.disliked? tuit.dislikes - 1 : tuit.dislikes + 1,
+            disliked: !tuit.disliked}
+        ))
     }
     return(
         <div className="wd-content-board d-flex">
@@ -43,8 +53,14 @@ const TuitItem = ({tuit}) => {
                     <div><a className="wd-display-horizontal-center" href="" onClick={(e) => {
                         e.preventDefault();
                         likeTuitHandler(tuit)
-                    }}>
-                        <i className={`bi bi-heart me-3 ${tuit.liked ? "wd-pink" : ""}`}></i>{tuit.likes}</a></div>
+                    }}><i className={`bi bi-heart me-3 ${tuit.liked ? "wd-pink" : ""}`}></i>{tuit.likes}</a></div>
+
+
+                    <div><a className="wd-display-horizontal-center" href="" onClick={(e) => {
+                        e.preventDefault();
+                        dislikeTuitHandler(tuit)
+                    }}><i className={`bi bi-hand-thumbs-down me-3 ${tuit.disliked ? "wd-pink" : ""}`}></i>{tuit.dislikes}</a></div>
+
 
                     <div><a className="wd-display-horizontal-center" href="#">
                         <i className="bi bi-upload me-3"></i></a></div>
